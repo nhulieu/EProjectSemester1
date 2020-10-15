@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHRISTONE Store</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.shoppingcart.js"></script>
+    <script src="js/jquery.shoppingcartuser.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style3.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gem Stone Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--webfont-->
+    <!-- dropdown -->
+    <script src="js/jquery.easydropdown.js"></script>
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/modernizr.custom.js"></script>
+    <!--js-->
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!---- start-smoth-scrolling---->
+
+</head>
+<style>
+    body {
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25 {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+    }
+
+    .col-50 {
+        -ms-flex: 50%;
+        /* IE10 */
+        flex: 50%;
+    }
+
+    .col-75 {
+        -ms-flex: 75%;
+        /* IE10 */
+        flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 0 16px;
+    }
+
+    .container-checkout {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    
+    .container-checkout-header{
+        background-color: darkgray;
+    }
+
+    .container-checkout h3,h4,label,input,.btn{
+        font-family: 'Alegreya', serif;
+        font-weight: 600;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .checkout-title{
+        font-size: 40px;
+    }
+
+    .container-checkout-product{
+        padding: 12px;        
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;  
+        padding-top: 12px;      
+        padding-bottom: 12px;         
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+    a {
+        color: #2196F3;
+    }
+
+    hr {
+        border: 1px solid lightgrey;
+    }
+
+    span.price {
+        float: right;
+        color: grey;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        .col-25 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .checkout-form {
+        width: 100%;
+        /* border: 1px groove; */
+    }
+
+    .checkout-table{
+        width: 100%;
+    }
+
+    .checkout-table tr > td {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* .pull-left{
+        text-align: left;
+        vertical-align: middle;
+    } */
+
+    /* .pull-right{
+        display: inline-block;
+        align-items: right;
+        justify-content: right;
+    } */
+
+    .cart-table{
+        width: 100%;
+        /* border-collapse:separate; 
+        border-spacing:0 10px;  */
+        max-height: 150px;        
+        
+    }
+
+    th{
+        text-align: center !important; 
+    }
+
+    .cart-table thead > th{        
+        justify-content: center !important;
+        text-align: center !important;
+        display: flex !important;
+        background:  red;
+    }
+
+
+    .cart-table tbody{
+        font-size: 20px;
+        font-family: 'Alegreya', serif;
+        font-weight: 600;        
+        height: 500px;                
+    }
+
+    .cart-table tbody td,th{
+        padding : 10px;
+    }
+
+    .cart-table tfoot td{
+        padding : 10px;
+        text-align: center;
+    }
+
+   
+
+
+    .amount,.qty{
+        font-size: 24px;
+        font-family: 'Alegreya', serif;
+        font-weight: 600;
+    }
+
+    tfoot .amount{
+        font-size: 30px;
+    }
+
+    .cart-footer{
+        font-size: 20px;
+        font-family: 'Alegreya', serif;
+        font-weight: 600;
+    }
+
+    tbody  tr  .product-name:hover{
+        color : red !important;
+    }
+
+    .bill-address{
+        font-size: 20px;
+        font-family: 'Alegreya', serif;
+        font-weight: 600;
+    }
+
+    .bill-header{
+        margin-left: 15px;   
+        margin-bottom: 80px;     
+    }
+
+    .bill-body{
+        font-size: 20px;
+        font-family: 'Alegreya', serif;
+        font-weight: 600;
+        margin: auto;        
+        width: 100%;
+    }
+
+    .bill-info-title{
+        color : red !important;
+    }
+
+    .bill-info-value{
+        text-align: center;
+    }
+
+    .bill-info-user-value{
+        text-align: left;
+    }
+
+    .main-col{
+        width: 60%;
+        text-align: left !important;
+    }
+    .sec-col{
+        width: 20%;
+    }
+
+
+
+
+</style>
+
+<body>
+    <!--Menu-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+       <div class="banner-bg banner-bg1 page-head">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">CHRISTONE Store</a>
+                </div>
+                <div class="top-nav">
+                    <label class="mobile_menu" for="mobile_menu">
+                        <span>Menu</span>
+                    </label>
+                    <input id="mobile_menu" type="checkbox">
+                    <ul class="nav">
+                        <li><a href="index.html"><img style="height: 30px;width: 30px;margin-top: -5px"  src="images/home.svg"></a></li>
+    
+                        <li><a href="about.html">ABOUT</a></li>
+                        <!--link -->
+    
+                        </li>
+                        <li class="dropdown1"><a href="product-slide.html">Products</a>
+                            <!--link -->
+                            <ul class="dropdown2">
+                                <li><a href="#">HEALING</a>
+                                    <ul class="dropdown3">
+                                        <li><a href="jade.html">JADE</a></li>
+                                        <li><a href="Agate.html">AGATE</a></li>
+                                        <li><a href="BloodStone.html">BLOOD STONE</a></li>
+                                        <li><a href="Obsidian.html">OBSIDIAN</a></li>
+                                        <li><a href="Onyx.html">ONYX</a></li>
+                                        <li><a href="Moldavite.html">MOLDAVITE</a></li>
+                                        <li><a href="black-tourmaline _pHU.html">BLACK TOURMALINE</a></li>
+                                        <li><a href="Labradorite.html">LABRADORITE</a></li>
+                                        <li><a href="Rose-Quarzt.html">ROSE QUARTZ</a></li>
+                                        <li><a href="TigersEye.html">TIGER'S EYE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">NATURAL GEMS</a>
+                                    <ul class="dropdown3">
+                                        <li><a href="Aquamarine.html">AQUAMARINE</a></li>
+                                        <li><a href="diamond.html">DIAMOND</a></li>
+                                        <li><a href="Emerald.html">EMERALD</a></li>
+                                        <li><a href="topaz.html">TOPAZ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="specialOffer.html">Special Offers</a>
+                            <!--link -->
+    
+                        </li>
+                        <li><a class="scroll" href="#contact">CONTACT</a></li>
+                        <!--link -->
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome -->
+    <!-- <div class="welcome">
+        
+    </div> -->      
+
+    <div id="cart" class="container-checkout">
+        <div class="header bill-header">
+            <div class="logo">
+                <a>CHRISTONE <h3 style="font-size: 29px;color: black;display: inline-block;">Store</h3></a>
+                <p class="bill-address">95-65 Nguyen Thi Thap street </p>
+                <p class="bill-address">District 7, 70000,Ho Chi Minh</p>
+            </div>          
+            <div class="clearfix"></div>  
+        </div>        
+        <hr>
+        <div class="container-checkout-product">
+            <table class="bill-body">   
+                <thead>
+                    <th class="bill-info-title main-col">Bill To</th>
+                    <th class="bill-info-title sec-col">Invoice Date: </th>
+                    <th class="bill-info-value sec-col">
+                        <script>
+                            document.write(new Date().toDateString());                       
+                        </script>
+                    </th>
+                </thead>      
+                   
+                <tr>
+                    <td class="bill-info-user-value">
+                        <script>
+                            document.write($.shoppingcartuser("get").name);                        
+                        </script>
+                    </td>
+                    <th class="bill-info-title sec-col">P.O.#: </th>
+                    <th class="bill-info-value sec-col">
+                        <script>
+                            var rd = Math.floor(Math.random() * (9999 - 0) ) + 0;
+                            document.write(rd+"/"+(new Date().getFullYear()));                     
+                        </script>
+                    </th>
+                    
+                </tr>
+                <tr>
+                    <td class="bill-info-user-value" witdh="70%">
+                        <script>                        
+                            document.write($.shoppingcartuser("get").address); 
+                        </script>
+                    </td>
+                    <th class="bill-info-title sec-col">Estimate Receive Date: </th>
+                    <th class="bill-info-value sec-col">
+                        <script>
+                            var date = new Date();
+                            date.setDate(date.getDate()+5)
+                            document.write(date.toDateString());                       
+                        </script>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="bill-info-user-value" witdh="70%">
+                        <script>
+                            document.write($.shoppingcartuser("get").zip +", "+$.shoppingcartuser("get").city); 
+                        </script>
+                    </td>
+                    <td witdh="15%">
+                        
+                    </td>
+                    <td witdh="15%">
+    
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        
+
+        <div class="container-checkout-product">
+            <table class="cart-table" border="1">
+                <thead>
+                    <tr>
+                        <th width="60%">
+                            <h3>Descriptions</h3>
+                        </th> 
+                        <th width="20%" valign="middle">
+                            <h3>Qty</h3>
+                        </th>
+                        <th width="20%" valign="middle">
+                            <h3>Amount</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        if (localStorage.getItem('shoppingcartProducts') === null) {
+                            window.history.back();
+                        }
+                        var listProductStr = "";
+                        var listProduct = $.shoppingcart('getAll');                        
+                        listProduct.forEach(product => {
+                            listProductStr+="<tr><td><p><a class='product-name'>"+product.name+"</a></td></p><td align='center'><span class='qty'>"+product.count+"</span></td><td align='center' valign='center'><span class='amount'>$"+product.price.toFixed(2)+"</span></td></tr>";   
+                        });
+                        document.write(listProductStr);
+                    </script>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="border: none 0px"></th>
+                        <th><p class="cart-footer">Total <span id="total-price" class="price" style="color:black"></span></p></td>
+                        <!-- <td><b></script></b></td> -->
+                        <td align='right' valign='center'><span class='amount'>$<script>document.write(parseFloat(localStorage.getItem('shoppingcartPrice')).toFixed(2))</script></span></td>
+                    </tr>
+                    
+                    
+                
+                </tfoot>
+            </table>                  
+            
+            <script>
+                $.shoppingcart("clear");
+                localStorage.removeItem("shoppingCartUser");
+                function goback(){
+                    alert("Thank you for trusting and using of our services! Best regards");
+                    window.location.href = "index.html"
+                }                
+            </script> 
+            <br>
+
+        </div>    
+        
+        <div style="width: 99%;margin:auto"><button onclick="goback()" id="goback" class="btn">Go back</button></div>
+    </div>
+
+    
+
+    
+    <!--contact-->
+    <div id="contact" class="contact">
+        <div class="container">
+            <h3>CONTACT US</h3>
+            <p>Please contact us for all inquiries and purchase options.</p>
+                <div class="cont-grids">
+                    <div class="col-md-6 contact-left">
+                        <form>
+                             <input type="text" placeholder="NAME" required="">
+                             <input type="text" placeholder="SURNAME" required="">			 
+                             <input class="user" type="text" placeholder="E-MAIL" required=""><br>
+                             <textarea placeholder="MESSAGE"></textarea>
+                             <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9586347748095!2d106.72462281495102!3d10.737671592347873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175257c315af3b1%3A0x3415e358557e2435!2zOTUtNjUgTmd1eeG7hW4gVGjhu4sgVGjhuq1wLCBCw6xuaCBUaHXhuq1uLCBRdeG6rW4gNywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1600845659581!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+        </div>
+    </div>
+    <!---->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="logo2">
+                     <a href="index.html">CHRISTONE Store</a>
+                </div>
+                <div class="ftr-menu">
+                    <div class="nav-footer">
+                       <div class="top-nav">
+                           <label class="mobile_menu" for="mobile_menu">
+                               <span>Menu</span>
+                           </label>
+                           <input id="mobile_menu" type="checkbox">
+                           <ul class="nav">
+                               <li><a href="index.html"><img style="height: 30px;width: 30px;margin-top: -5px" src="images/home.svg"></a></li>
+       
+                               <li><a href="about.html">ABOUT</a></li>
+                               <!--link -->
+       
+                               
+                               <li class="dropdown1"><a href="product-slide.html">Products</a>
+                                   <!--link -->
+                                   <ul class="dropdown2">
+                                       <li><a href="#">HEALING</a>
+                                           <ul class="dropdown3">
+                                               <li class="li-footer"><a href="jade.html">JADE</a></li>
+                                               <li class="li-footer"><a href="Agate.html">AGATE</a></li>
+                                               <li class="li-footer"><a href="BloodStone.html">BLOOD STONE</a></li>
+                                               <li class="li-footer"><a href="Obsidian.html">OBSIDIAN</a></li>
+                                               <li class="li-footer"><a href="Onyx.html">ONYX</a></li>
+                                               <li class="li-footer"><a href="Moldavite.html">MOLDAVITE</a></li>
+                                               <li class="li-footer"><a href="black-tourmaline _pHU.html">BLACK TOURMALINE</a></li>
+                                               <li class="li-footer"><a href="Labradorite.html">LABRADORITE</a></li>
+                                               <li class="li-footer"><a href="Rose-Quarzt.html">ROSE QUARTZ</a></li>
+                                               <li class="li-footer"><a href="TigersEye.html">TIGER'S EYE</a></li>
+                                           </ul>
+                                       </li>
+                                       <li><a href="#">NATURAL GEMS</a>
+                                           <ul class="dropdown3 li-dropdown3">
+                                               <li class="li-footer"><a href="Aquamarine.html">AQUAMARINE</a></li>
+                                               <li class="li-footer"><a href="diamond.html">DIAMOND</a></li>
+                                               <li class="li-footer"><a href="Emerald.html">EMERALD</a></li>
+                                               <li class="li-footer"><a href="topaz.html">TOPAZ</a></li>
+                                           </ul>
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li><a href="specialOffer.html">Special Offers</a>
+                                   <!--link -->
+       
+                               </li>
+                               <li><a class="scroll" href="#contact">CONTACT</a></li>
+                               <!--link -->
+                           </ul>
+                       </div>
+                    </div>
+                    
+               </div>
+                <div class="clearfix"></div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+                <p> &copy; 2020 CHRISTONE Store. All Rights Reserved | Design by TEAM | <a href="mailto:Thuoc740@gmail.com">CRYSTALSTORE@gmail.com</a></p>
+        </div>
+    </div>
+    <!---->
+    <!-- thanh trượt -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var defaults = {
+                containerID: 'toTop',
+                containerHoverID: 'toTopHover',
+                scrollSpeed: 1900,
+                easingType: 'linear'
+            };
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+
+</html>

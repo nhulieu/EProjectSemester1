@@ -1,0 +1,68 @@
+
+
+.menu2 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.title {
+    width: 100%;
+    margin: auto;
+    padding: 5rem;
+    
+}
+
+.title h4 {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 4rem;
+    color: red ;
+    text-shadow: black 1px 1px;
+
+
+}
+
+
+.menu2 .item{
+    width: 24%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+    border: thin rgba(168, 168, 168, 0.308) solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px;
+    transition: 0.5s;
+}
+.menu2 .item:hover{
+    transform: scale(1.08);
+}
+
+.menu2 .item .itemimg img{
+  transition: 0.5s;
+}
+
+.menu2  .item .info {
+    background-color: red;
+}
+.menu2 .item .info .name{
+    padding: 0.3rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+.menu2 .item .info .price{
+    padding: 0.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+

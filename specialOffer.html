@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CHRISTONE Store</title>
+	<script type="text/javascript" src="json/combo.txt"></script>
+	<script type="text/javascript" src="json/discount5.txt"></script>
+	<script type="text/javascript" src="json/gift-to-love.txt"></script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <link href="css/style-2.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.shoppingcart.js"></script>
+    <!-- Custom Theme files -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style-2.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.shoppingcart.js"></script>
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Gem Stone Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900'
+		rel='stylesheet' type='text/css'>
+	<!--webfont-->
+	<!-- dropdown -->
+	<script src="js/jquery.easydropdown.js"></script>
+	<link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/modernizr.custom.js"></script>
+	<!--js-->
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+			});
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
+
+	<!-- Extended Boostrap -->
+	<link rel="stylesheet" href="css/glider.css" />
+	<!-- <script src="css/glider.min.css"></script> -->
+	<script src="js/glider.js"></script>
+	<script>
+		window.addEventListener('load', function () {
+			document.querySelector('.glider').addEventListener('glider-slide-visible', function (event) {
+				var glider = Glider(this);
+				console.log('Slide Visible %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-slide-hidden', function (event) {
+				console.log('Slide Hidden %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-refresh', function (event) {
+				console.log('Refresh')
+			});
+			document.querySelector('.glider').addEventListener('glider-loaded', function (event) {
+				console.log('Loaded')
+			});
+			window._ = new Glider(document.querySelector('#bigSale'), {
+				slidesToShow: 1, //'auto',
+				slideToScroll: 1,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-1',
+				arrows: {
+					prev: '#prev-1',
+					next: '#next-1'
+				}
+			});
+			window._ = new Glider(document.querySelector('#combo'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-2',
+				arrows: {
+					prev: '#prev-2',
+					next: '#next-2'
+				}
+			});
+			window._ = new Glider(document.querySelector('#love'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-3',
+				arrows: {
+					prev: '#prev-3',
+					next: '#next-3'
+				}
+			});
+			window._ = new Glider(document.querySelector('#discount'), {
+				slidesToShow: 4, //'auto',
+				slideToScroll: 2,
+				scrollLock: false,
+				rewind: true,
+				dots: '#dots-4',
+				arrows: {
+					prev: '#prev-4',
+					next: '#next-4'
+				}
+			});
+		});
+	</script>
+	
+</head>
+
+<body>
+	<!--banner-->
+	<div class="banner-bg banner-bg1 page-head">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">CHRISTONE Store</a>
+                </div>
+                <div class="top-nav">
+                    <label class="mobile_menu" for="mobile_menu">
+                        <span>Menu</span>
+                    </label>
+                    <input id="mobile_menu" type="checkbox">
+                    <ul class="nav">
+                        <li><a href="index.html"><img style="height: 30px;width: 30px;margin-top: -5px"  src="images/home.svg"></a></li>
+
+                        <li><a href="about.html">ABOUT</a></li>
+                        <!--link -->
+
+                        </li>
+                        <li class="dropdown1"><a href="product-slide.html">Products</a>
+                            <!--link -->
+                            <ul class="dropdown2">
+                                <li><a href="#">HEALING</a>
+                                    <ul class="dropdown3">
+                                        <li><a href="jade.html">JADE</a></li>
+                                        <li><a href="Agate.html">AGATE</a></li>
+                                        <li><a href="BloodStone.html">BLOOD STONE</a></li>
+                                        <li><a href="Obsidian.html">OBSIDIAN</a></li>
+                                        <li><a href="Onyx.html">ONYX</a></li>
+                                        <li><a href="Moldavite.html">MOLDAVITE</a></li>
+										<li><a href="black-tourmaline _pHU.html">BLACK TOURMALINE</a></li>
+										<li><a href="Labradorite.html">LABRADORITE</a></li>
+										<li><a href="Rose-Quarzt.html">ROSE QUARTZ</a></li>
+										<li><a href="TigersEye.html">TIGER'S EYE</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">NATURAL GEMS</a>
+                                    <ul class="dropdown3">
+                                        <li><a href="Aquamarine.html">AQUAMARINE</a></li>
+                                        <li><a href="diamond.html">DIAMOND</a></li>
+                                        <li><a href="Emerald.html">EMERALD</a></li>
+                                        <li><a href="topaz.html">TOPAZ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="specialOffer.html">Special Offers</a>
+                            <!--link -->
+
+                        </li>
+                        <li><a class="scroll" href="#contact">CONTACT</a></li>
+                        <!--link -->
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+	<!--//banner-->
+
+	<!--gallery-->
+	<!--light-box-files -->
+	<script src="js/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+	<!--light-box-files -->
+	<script type="text/javascript" charset="utf-8">
+		$(function () {
+			$('.moments-bottom a').Chocolat();
+		});
+	</script>
+	<!--moments-starts-->
+	<div class="moments">
+		<div class="container">
+			<h3>BIG SALE EVENTS</h3>
+			<div class="glider-contain">
+				<div id="bigSale" class="glider">
+					<div><img width="1587" height="400" src="images/Best_Seller_Banner.png"></div>
+					<div><img width="1587" height="400" src="images/banner2.jpg"></div>
+					<div><img width="1587" height="400" src="images/banner3.jpg"></div>
+					<div><img width="1587" height="400" src="images/banner 4.jpg"></div>
+				</div>
+				<button id="prev-1" class="glider-prev">&laquo;</button>
+				<button id="next-1" class="glider-next">&raquo;</button>
+				<div id="dots-1"></div>
+			</div>
+
+			<h3>COMBO SUMMER</h3>
+			<div class="glider-contain">
+				<div id="combo" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var combo_product = combo_prd;						
+						var productStr = "";
+						combo_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='"+product.href+"' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+				</div>
+				<button id="prev-2" class="glider-prev">&laquo;</button>
+				<button id="next-2" class="glider-next">&raquo;</button>
+				<div id="dots-2"></div>
+			</div>
+			
+			<h3>GIFTS TO LOVE </h3>
+			<div class="glider-contain">
+				<div id="love" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var gtl_product = gtl_prd;						
+						var productStr = "";
+						gtl_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='"+product.href+"' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+					
+				</div>
+				<button id="prev-3" class="glider-prev">&laquo;</button>
+				<button id="next-3" class="glider-next">&raquo;</button>
+				<div id="dots-3"></div>
+			</div>
+
+			<h3>SPECIAL PRICE </h3>
+			<div class="glider-contain">
+				<div id="discount" class="glider cs-style-1">
+					<script> 
+					// height='280px' width='300px'
+						var discount_product = discount_prd;						
+						var productStr = "";
+						discount_product.product.forEach(product => {
+							productStr += "<div class='col-md-4 grid single-product'>"+
+									"<figure class='single-product-figure'>"+
+										"<img class='single-product-image' src='"+product.img+"'>"+							
+										"<figcaption>"+
+											"<div class='product-name'>"+product.name+"</div>"+						
+											"<span><b>$"+product.price+"</b></span>"+
+											"<a href='#' class='cd-add-to-cart js-cd-add-to-cart'"+
+												"data-id='"+product.id+"'" +	
+												"data-name='"+product.name+"'"+
+												"data-src='"+product.img+"'"+
+												"data-price='"+product.price+"'>Add</a> "+
+											"<a href='"+product.href+"' class='view-product'>View</a>"+
+										"</figcaption>"+
+									"</figure>"+
+								"</div>\n";							
+						});
+						document.write(productStr);
+					</script>
+				</div>
+				<button id="prev-4" class="glider-prev">&laquo;</button>
+				<button id="next-4" class="glider-next">&raquo;</button>
+				<div id="dots-4"></div>
+			</div>
+
+		</div>
+	</div>
+	<!--moments-->
+	<!--//gallery-->
+
+	<!--footer-->
+    <div id="contact" class="contact">
+        <div class="container">
+            <h3>CONTACT US</h3>
+            <p>Please contact us for all inquiries and purchase options.</p>
+                <div class="cont-grids">
+                    <div class="col-md-6 contact-left">
+                        <form>
+                             <input type="text" placeholder="NAME" required="">
+                             <input type="text" placeholder="SURNAME" required="">			 
+                             <input class="user" type="text" placeholder="E-MAIL" required=""><br>
+                             <textarea placeholder="MESSAGE"></textarea>
+                             <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9586347748095!2d106.72462281495102!3d10.737671592347873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175257c315af3b1%3A0x3415e358557e2435!2zOTUtNjUgTmd1eeG7hW4gVGjhu4sgVGjhuq1wLCBCw6xuaCBUaHXhuq1uLCBRdeG6rW4gNywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1600845659581!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+        </div>
+    </div>
+    <!---->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="logo2">
+                     <a href="index.html">CHRISTONE Store</a>
+                </div>
+                <div class="ftr-menu">
+					 <div class="nav-footer">
+						<div class="top-nav">
+							<label class="mobile_menu" for="mobile_menu">
+								<span>Menu</span>
+							</label>
+							<input id="mobile_menu" type="checkbox">
+							<ul class="nav">
+								<li><a href="index.html"><img style="height: 30px;width: 30px;margin-top: -5px" src="images/home.svg"></a></li>
+		
+								<li><a href="about.html">ABOUT</a></li>
+								<!--link -->
+		
+								
+								<li class="dropdown1"><a href="product-slide.html">Products</a>
+									<!--link -->
+									<ul class="dropdown2">
+										<li><a href="#">HEALING</a>
+											<ul class="dropdown3">
+												<li class="li-footer"><a href="jade.html">JADE</a></li>
+												<li class="li-footer"><a href="Agate.html">AGATE</a></li>
+												<li class="li-footer"><a href="BloodStone.html">BLOOD STONE</a></li>
+												<li class="li-footer"><a href="Obsidian.html">OBSIDIAN</a></li>
+												<li class="li-footer"><a href="Onyx.html">ONYX</a></li>
+												<li class="li-footer"><a href="Moldavite.html">MOLDAVITE</a></li>
+												<li class="li-footer"><a href="black-tourmaline _pHU.html">BLACK TOURMALINE</a></li>
+												<li class="li-footer"><a href="Labradorite.html">LABRADORITE</a></li>
+												<li class="li-footer"><a href="Rose-Quarzt.html">ROSE QUARTZ</a></li>
+												<li class="li-footer"><a href="TigersEye.html">TIGER'S EYE</a></li>
+											</ul>
+										</li>
+										<li><a href="#">NATURAL GEMS</a>
+											<ul class="dropdown3 li-dropdown3">
+												<li class="li-footer"><a href="Aquamarine.html">AQUAMARINE</a></li>
+												<li class="li-footer"><a href="diamond.html">DIAMOND</a></li>
+												<li class="li-footer"><a href="Emerald.html">EMERALD</a></li>
+												<li class="li-footer"><a href="topaz.html">TOPAZ</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="specialOffer.html">Special Offers</a>
+									<!--link -->
+		
+								</li>
+								<li><a class="scroll" href="#contact">CONTACT</a></li>
+								<!--link -->
+							</ul>
+						</div>
+					 </div>
+					 
+                </div>
+                <div class="clearfix"></div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+                <p> &copy; 2020 CHRISTONE Store. All Rights Reserved | Design by TEAM | <a href="mailto:Thuoc740@gmail.com">CHRISTONESTORE@gmail.com</a></p>
+        </div>
+    </div>
+	<!--footer-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+
+
+	<div class="cd-cart cd-cart--empty js-cd-cart">
+		<a href="#0" class="cd-cart__trigger text-replace">
+			Cart
+			<ul class="cd-cart__count">
+				<!-- cart items count -->
+				<li>0</li>
+				<li>0</li>
+			</ul> <!-- .cd-cart__count -->
+		</a>
+
+		<div class="cd-cart__content">
+			<div class="cd-cart__layout">
+				<header class="cd-cart__header">
+					<h2>Cart</h2>
+					<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+				</header>
+
+				<div class="cd-cart__body">
+					<ul>
+						<!-- products added to the cart will be inserted here using JavaScript -->
+					</ul>
+				</div>
+
+				<footer class="cd-cart__footer">
+					<a href="#0" class="cd-cart__checkout">
+						<em>Checkout - $<span>0</span>
+							<svg class="icon icon--sm" viewBox="0 0 24 24">
+								<g fill="none" stroke="currentColor">
+									<line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12"
+										x2="21" y2="12" />
+									<polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										points="15,6 21,12 15,18 " />
+								</g>
+							</svg>
+						</em>
+					</a>
+				</footer>
+			</div>
+		</div> <!-- .cd-cart__content -->
+	</div> <!-- cd-cart -->
+	<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+	<script src="js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,88 @@
+discount_prd = {
+    "product" : [
+      {
+        "id": "45",
+        "name": "Best Quality Natural Bloodstone Mala String (24 Inch)",
+        "img": "images/Image_eproject/Product/Healing/BloodStone/best_quality_natural_bloodstone_mala_string.jpg",
+        "price": "54.61",
+        "href": "product/BloodStone/Best Quality Natural Bloodstone Mala String (24 Inch).html"
+      },
+      {
+        "id": "69",
+        "name": "Sheen Obsidian Sitting Buddha Statue",
+        "img": "images/Image_eproject/Special Offer/Discount/dalmatian-jasper-power-bead-bracelet.jpg",
+        "price": "61.26",
+        "href": "product/Obsidian/Sheen Obsidian Sitting Buddha Statue.html"
+      },
+      {
+        "id": "128",
+        "name": "Labradorite Crystal Beads - 50mm Rhombus",
+        "img": "images/Image_eproject/Special Offer/Discount/labradorite-crystal-beads-12mm-rhombus.jpg",
+        "price": "32.99",
+        "href": "product/Labradorite/Labradorite Crystal Beads - 50mm.html"
+      },
+      {
+        "id": "134",
+        "name": "Labradorite Crystal Pendulum",
+        "img": "images/Image_eproject/Special Offer/Discount/labradorite-crystal-pendulum_2.jpg",
+        "price": "9.99",
+        "href": "product/Labradorite/Labradorite Crystal Pendulum.html"
+      },
+      {
+        "id": "1",
+        "name": "18.68 Carat Natural Agate (Sulemani Hakik) Gemstone",
+        "img": "images/Image_eproject/Product/Healing/Agate/18.68_carat_natural_agate_sulemani_hakik_gemstone_1_.jpg",
+        "price": "114.75",
+        "href": "product/Agate/18.68 Carat.html"
+      },
+      {
+        "id": "6",
+        "name": "Mahogany Obsidian Power Bead Bracelet",
+        "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/mahogany-obsidian-power-bead-bracelet.jpg",
+        "price": "4.99",
+        "href": ""
+      },
+      {
+        "id": "62",
+        "name": "Emerald Tumble Stone (25-30mm)",
+        "img": "images/Image_eproject/Product/Natural gems/Emeralt/Crystalage/emerald-tumble-stone-25-30mm_3.jpg",
+        "price": "6.00",
+        "href": "product/Emerald/Emerald Tumble Stone (25-30mm).html"
+      },
+      {
+        "id": "35",
+        "name": "Black Tourmaline Pencil Pendant",
+        "img": "images/Image_eproject/Product/Healing/BlackTourmaline/black_tourmaline_pencil_pendant.jpg",
+        "price": "20.48",
+        "href": "product/BlackTourmaline/Black Tourmaline Pencil Pendant.html"
+      },
+      {
+        "id": "111",
+        "name": "78.50 Carat Natural Healing Moldavite Stone",
+        "img": "images/Image_eproject/Product/Healing/Moldavite/78-50-carat-natural-healing-moldavite-rough-stone_1_.jpg",
+        "price": "78.50",
+        "href": "product/Moldavite/78.50 Carat.html"
+      },
+      {
+        "id": "30",
+        "name": "Tumbled Black Tourmaline",
+        "img": "images/Image_eproject/Product/Healing/BlackTourmaline/tumbled-black-tourmaline.jpg",
+        "price": "47.78",
+        "href": "product/BlackTourmaline/Tumbled Black Tourmaline.html"
+      },
+      {
+        "id": "161",
+        "name": "Natural Tiger Eye Crystal Pyramid",
+        "img": "images/Image_eproject/Special Offer/Discount/tiger-eye-stone-pyramid.jpg",
+        "price": "1500.00",
+        "href": "product/TigersEye/Natural Tiger Eye Crystal Pyramid.html"
+      },
+      {
+        "id": "132",
+        "name": "Labradorite Generator Point",
+        "img": "images/Image_eproject/Product/Healing/Labradorite/Crystalage/labradorite-generator-point-55mm_2.jpg",
+        "price": "6.99",
+        "href": "product/Labradorite/Labradorite Generator Point.html"
+      }
+    ]
+  }

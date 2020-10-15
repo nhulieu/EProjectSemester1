@@ -1,0 +1,90 @@
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  color: #e995a2;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  color: #e22743;
+}
+
+.mySlides1 {
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.mySlides1 h3 {
+    
+   text-align: center;
+   color: #e995a2;
+   font-weight: bold;
+   font-size: 1.8rem;
+   transition: 0.5s;
+}
+.mySlides1:hover h3 {
+    color: #e26477;
+    font-size: 2.1rem;
+}
+.img-part {
+    margin: 0 5px;
+    border: #e995a2 solid thin;
+    box-shadow:  #e6b1b9 1px 1px;
+    width: 25%; 
+    transition: 0.4s;
+}
+.img-part:hover {
+    transform: scale(0.97);
+}
+
+
+h2 {
+  text-align: center;
+    border-radius: #e05d71 2px 2px;
+    padding: 1.2rem;
+    background-color: #e995a2;
+    margin: 4rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.mySlides2 {
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.mySlides2 h3 {
+  text-align: center;
+  color: #e995a2;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.5s;
+}
+.mySlides2:hover h3 {
+  color: #e26477;
+  font-size: 2.1rem;
+}

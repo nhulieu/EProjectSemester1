@@ -1,0 +1,88 @@
+gtl_prd = {
+  "product": [
+    {
+      "id": "77",
+      "name": "Black Banded Onyx Crystal Heart ~40mm",
+      "img": "images/Image_eproject/Special Offer/Gift to love/Heart/black-banded-onyx-crystal-heart-40mm_20.jpg",
+      "price": "10.99",
+      "href": "product/Onyx/Black Banded Onyx Crystal Heart 40mm.html"
+    },
+    {
+      "id": "64",
+      "name": "Black Obsidian Crystal Heart ~45mm",
+      "img": "images/Image_eproject/Special Offer/Gift to love/Heart/black-obsidian-crystal-heart-45mm_2.jpg",
+      "price": "5.99",
+      "href": "product/Obsidian/Black Obsidian Crystal Heart 45mm.html"
+    },
+    {
+      "id": "129",
+      "name": "Labradorite Crystal Heart ~45mm",
+      "img": "images/Image_eproject/Product/Healing/Labradorite/Crystalage/labradorite-crystal-heart-45mm_40.jpg",
+      "price": "9.99",
+      "href": "product/Labradorite/Labradorite Crystal Heart ~45mm.html"
+    },
+    {
+      "id": "80",
+      "name": "Green Onyx Crystal Heart ~45mm",
+      "img": "images/Image_eproject/Special Offer/Gift to love/Heart/onyx-crystal-heart-45mm_2.jpg",
+      "price": "5.99",
+      "href": "product/Onyx/Green Onyx Crystal Heart  45mm.html"
+    },
+    {
+      "id": "4",
+      "name": "Snowflake Obsidian Bracelet - 'Recuperation'",
+      "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/snowflake-obsidian-bracelet-recuperation_3.jpg",
+      "price": "2.99",
+      "href": "product/Obsidian/Recuperation.html"
+    },
+    {
+      "id": "46",
+      "name": "Natural Blood Stone Jasper Gemstone Bracelet",
+      "img": "images/Image_eproject/Product/Healing/BloodStone/bloodstone_jasper_1_.jpg",
+      "price": "20.48",
+      "href": "product/BloodStone/Natural Blood Stone Jasper Gemstone Bracelet.html"
+    },
+    {
+      "id": "142",
+      "name": "Natural Rose Quartz 108 Beads Japa Mala Rosary",
+      "img": "images/Image_eproject/Special Offer/Gift to love/ROSE/natural_rose_quartz_108_beads_japa_mala_rosary_1_.jpeg",
+      "price": "74.87",
+      "href": "product/RoseQuarzt/Natural Rose Quartz 108 Beads Japa Mala Rosary.html"
+    },
+    {
+      "id": "150",
+      "name": "Rose Quartz Angel Pendant - 40mm",
+      "img": "images/Image_eproject/Special Offer/Gift to love/ROSE/rose-quartz-angel-pendant-40mm_2.jpg",
+      "price": "11.99",
+      "href": "product/RoseQuarzt/Rose Quartz Angel Pendant 40mm.html"
+    },
+    {
+      "id": "151",
+      "name": "Rose Quartz Carved Crystal Duck (Large)",
+      "img": "images/Image_eproject/Product/Healing/ROSE QUARTZ/Crystalage/rose-quartz-carved-crystal-duck-large.jpg",
+      "price": "6.99",
+      "href": "product/RoseQuarzt/Rose Quartz Carved Crystal Duck (Large).html"
+    },
+    {
+      "id": "140",
+      "name": "Natural Rose Quartz Tumbled Bracelet",
+      "img": "images/Image_eproject/Product/Healing/ROSE QUARTZ/Shubh/natural_rose_quartz_tumbled_bracelet.jpg",
+      "price": "34.03",
+      "href": "product/RoseQuarzt/Natural Rose Quartz Tumbled bracelet.html"
+    },
+    {
+      "id": "136",
+      "name": "10.41 Carat Natural Rose Quartz Gemstone",
+      "img": "images/Image_eproject/Product/Healing/ROSE QUARTZ/Shubh/10-41-carat-natural-rose-quartz-gemstone.jpg",
+      "price": "77.93",
+      "href": "product/RoseQuarzt/10.41 Carat Natural Rose Quartz Gemstone.html"
+    },
+    {
+      "id": "144",
+      "name": "Natural Rose Quartz Silver Pendant",
+      "img": "images/Image_eproject/Special Offer/Gift to love/ROSE/rose_quartz_silver_pendant.jpg",
+      "price": "74.87",
+      "href": "product/RoseQuarzt/Natural Rose Quartz Silver Pendant.html"
+    }
+  ]
+}

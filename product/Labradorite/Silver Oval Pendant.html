@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHRISTONE Store</title>
+    <link href="../../css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (Bootstrap's JavaScript plugins) -->
+    <script src="../../js/jquery.min.js"></script>    
+    <script src="../../js/jquery.docgenerate.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/style-2.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="../../js/jquery.shoppingcart.js"></script>
+    <!-- Custom Theme files -->
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gem Stone Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900'
+        rel='stylesheet' type='text/css'>
+    <!--webfont-->
+    <!-- dropdown -->
+    <script src="../../js/jquery.easydropdown.js"></script>
+    <link href="../../css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="../../js/modernizr.custom.js"></script>
+    <!--js-->
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="../../js/move-top.js"></script>
+    <script type="text/javascript" src="../../js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!---- start-smoth-scrolling---->
+    <!---- product css---->
+    <link rel="stylesheet" href="../../css/product.css">
+    <link rel="stylesheet" href="../../css/product-detail.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--banner-->
+    <script src="../../js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <div class="banner-bg banner-bg1 page-head">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="../../index.html"> CHRISTONE Store</a>
+                </div>
+                <div class="top-nav">
+                    <label class="mobile_menu" for="mobile_menu">
+                        <span>Menu</span>
+                    </label>
+                    <input id="mobile_menu" type="checkbox">
+                    <ul class="nav">
+                        <li><a href="../../index.html"><img style="height: 30px;width: 30px;margin-top: -5px"  src="../../images/home.svg" alt=""></a></li>
+
+                        <li><a href="../../about.html">ABOUT</a></li>
+                        <!--link -->
+
+                        </li>
+                        <li class="dropdown1"><a href="../../product-slide.html">Products</a>
+                            <!--link -->
+                            <ul class="dropdown2">
+                                <li><a href="../../product.html">HEALING</a>
+                                    <ul class="dropdown3">
+                                    <li><a href="../../jade.html">JADE</a></li>
+                                    <li><a href="../../Agate.html">AGATE</a></li>
+                                    <li><a href="../../BloodStone.html">BLOOD STONE</a></li>
+                                    <li><a href="../../Obsidian.html">OBSIDIAN</a></li>
+                                    <li><a href="../../Onyx.html">ONYX</a></li>
+                                    <li><a href="../../Moldavite.html">MOLDAVITE</a></li>
+                                    <li><a href="../../black-tourmaline _pHU.html">BLACK TOURMALINE</a></li>
+                                    <li><a href="../../Labradorite.html">LABRADORITE</a></li>
+                                    <li><a href="../../Rose-Quarzt.html">ROSE QUARTZ</a></li>
+                                    <li><a href="../../TigersEye.html">TIGER'S EYE</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="../../product.html">NATURAL GEMS</a>
+                                    <ul class="dropdown3">
+                                        <li><a href="../../Aquamarine.html">AQUAMARINE</a></li>
+                                        <li><a href="../../diamond.html">DIAMOND</a></li>
+                                        <li><a href="../../Emerald.html">EMERALD</a></li>
+                                        <li><a href="../../topaz.html">TOPAZ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../../specialOffer.html">Special Offers</a>
+                            <!--link -->
+
+                        </li>
+                        <li><a class="scroll" href="#contact">CONTACT</a></li>
+                        <!--link -->
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//banner-->
+    <!--gallery-->
+    <!--light-box-files -->
+    <script src="../../js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="../../css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+    <!--light-box-files -->
+    <!-- <script type="text/javascript" charset="utf-8">
+        $(function () {
+            $('.moments-bottom a').Chocolat();
+        });
+    </script> -->
+    <!--moments-starts-->
+    <!-- product-cart -->
+
+    <div id="product-summary" class="moments">
+        <div class="product-cart">
+            <div class="product-images">
+                <img src="../../images/Image_eproject/Product/Healing/Labradorite/Crystalage/labradorite-and-silver-oval-pendant-32mm_6.jpg"
+                    alt="">
+                <div class="money"><a id="buynow" class="js-cd-add-to-cart" href=""><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart </a> </div>
+            </div>
+            <div class="product-detail">
+                <h4> Labradorite & Silver Oval Pendant ~29mm
+                </h4>
+                <div class="price">
+                    <b>Price: <span class="checked">$44.99</span></b>
+                    <b> Rate: 3/5
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                    </b>
+                    </b>
+                </div>
+                <div class="details">   
+                    <input type="button" id="download" onclick="$.shoppingcartuser('download')" style="margin-bottom: 15px;"  title="Download summary feature as Word document" value="Download">
+                    <h4>Detail:</h4>
+                    <p>
+                    <ul>
+                        <li>Stone Types: Labradorite</li>
+                        <li>Weight/Size: 3.8/1.9 cm</li>
+                        <li>Country of Origin: India</li>
+                        <li>Shape/Cut: 	Free</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h4>Description:</h4>
+            <p>
+                This pendant features natural labradorite set in .925 silver. Labradorite is a wonderful crystal that contains flashes of blue and is associated with fire. It is believed to renew your energy and focus, making it an excellent stone to wear. For yourself or a loved one, this labradorite pendant would make a great gift.
+            </p>
+            <p>
+                This beautiful Labradorite stone shimmers with colour and looks wonderful displayed its own or with other crystals.
+            </p>   
+        </div>
+    </div>
+
+    <!-- product-cart -->
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <h3>CONTACT US</h3>
+            <p>Please contact us for all inquiries and purchase options.</p>
+            <div class="cont-grids">
+                <div class="col-md-6 contact-left">
+                    <form>
+                        <input type="text" placeholder="NAME" required="">
+                        <input type="text" placeholder="SURNAME" required="">
+                        <input class="user" type="text" placeholder="E-MAIL" required=""><br>
+                        <textarea placeholder="MESSAGE"></textarea>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
+                <div class="col-md-6 contact-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9586347748095!2d106.72462281495102!3d10.737671592347873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175257c315af3b1%3A0x3415e358557e2435!2zOTUtNjUgTmd1eeG7hW4gVGjhu4sgVGjhuq1wLCBCw6xuaCBUaHXhuq1uLCBRdeG6rW4gNywgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1600845659581!5m2!1sen!2s"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="logo2">
+                    <a href="../../index.html">CHRISTONE Store</a>
+                </div>
+                <div class="ftr-menu">
+                    <ul>
+                        <li><a href="../../about.html">ABOUT</a></li><!--link -->
+                         <li><a href="../../product-slide.html">PRODUCTS</a></li><!--link -->
+                         <li><a href="../../specialOffer.html">SPECIAL OFFERS</a></li><!--link -->
+                         <li><a class="scroll" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <p> CHRISTONE Store. All Rights Reserved | Design by TEAM</p>
+        </div>
+    </div>
+    <!--footer-->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //smooth scrolling -->
+    <div class="cd-cart cd-cart--empty js-cd-cart">
+        <a href="#0" class="cd-cart__trigger text-replace">
+            Cart
+            <ul class="cd-cart__count">
+                <!-- cart items count -->
+                <li>0</li>
+                <li>0</li>
+            </ul> <!-- .cd-cart__count -->
+        </a>
+    
+        <div class="cd-cart__content">
+            <div class="cd-cart__layout">
+                <header class="cd-cart__header">
+                    <h2>Cart</h2>
+                    <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+                </header>
+    
+                <div class="cd-cart__body">
+                    <ul>
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+    
+                <footer class="cd-cart__footer">
+                    <a href="#0" class="cd-cart__checkout">
+                        <em>Checkout - $<span>0</span>
+                            <svg class="icon icon--sm" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor">
+                                    <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12"
+                                        x2="21" y2="12" />
+                                    <polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        points="15,6 21,12 15,18 " />
+                                </g>
+                            </svg>
+                        </em>
+                    </a>
+                </footer>
+            </div>
+        </div> <!-- .cd-cart__content -->
+    </div> <!-- cd-cart -->
+    <script src="../../js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

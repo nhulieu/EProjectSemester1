@@ -1,0 +1,88 @@
+combo_prd = {
+  "product": [
+    {
+      "id": "58",
+      "name": "Best Quality Natural Zambia Emerald 2 Line String",
+      "img": "images/Image_eproject/Product/Natural gems/Emeralt/Shubh/2-lines-emerald-gemstone-smooth-beads1.jpg",
+      "price": "2086.61",
+      "href": "product/Emerald/Natural Zambia Emerald.html"
+    },
+    {
+      "id": "14",
+      "name": "5.36 Carat/ 5.95 Ratti Natural Aquamarine Gemstone",
+      "img": "images/Image_eproject/Product/Natural gems/Aquamarine/Shubh/5.36 Carat.jpg",
+      "price": "324.56",
+      "href": "product/Aquamarine/5.36 Carat.html"
+    },
+    {
+      "id": "10",
+      "name": "13.48 Carat Natural Agate (Sulemani Hakik) Gemstone",
+      "img": "images/Image_eproject/Product/Healing/Agate/13-48-carat-natural-agate-gemstone_1_.jpg",
+      "price": "6.066",
+      "href": "product/Agate/13.48 Carat.html"
+    },
+    {
+      "id": "134",
+      "name": "Labradorite Crystal Pendulum",
+      "img": "images/Image_eproject/Special Offer/Discount/labradorite-crystal-pendulum_2.jpg",
+      "price": "9.99",
+      "href": "product/Labradorite/Labradorite Crystal Pendulum.html"
+    },
+    {
+      "id": "71",
+      "name": "Black Obsidian Scrying Mirror Large",
+      "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/black-obsidian-scrying-mirror-large_3.jpg",
+      "price": "16.99",
+      "href": "product/Obsidian/Black Obsidian Scrying Mirror Large.html"
+    },
+    {
+      "id": "74",
+      "name": "Black Obsidian Arrowhead Crystal",
+      "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/obsidian-arrowhead-large_2.jpg",
+      "price": "1.99",
+      "href": "product/Obsidian/Black Obsidian Arrowhead Crystal.html"
+    },
+    {
+      "id": "67",
+      "name": "Blue Obsidian Crystal Egg",
+      "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/blue-obsidian-crystal-egg_2.jpg",
+      "price": "9.49",
+      "href": "product/Obsidian/Blue Obsidian Crystal Egg 48mm.html"
+    },
+    {
+      "id": "128",
+      "name": "Labradorite Crystal Beads - 50mm Rhombus",
+      "img": "images/Image_eproject/Product/Healing/Labradorite/Crystalage/labradorite-crystal-beads-12mm-rhombus.jpg",
+      "price": "32.99",
+      "href": "product/Labradorite/Labradorite Crystal Beads - 50mm.html"
+    },
+    {
+      "id": "122",
+      "name": "9.67 Carat/ 10.73 Ratti Natural Blue Topaz Gemstone",
+      "img": "images/Image_eproject/Product/Natural gems/Topaz/Shubh/9.67 Carat.jpg",
+      "price": "183.88",
+      "href": "product/Topaz/9.67 Carat.html"
+    },
+    {
+      "id": "79",
+      "name": "Black Onyx Tumble Stone 20-25mm",
+      "img": "images/Image_eproject/Product/Healing/ONYX/Crystalge/black-onyx-tumble-stone-20-25mm.jpg",
+      "price": "0.75",
+      "href": "product/Onyx/Black Onyx Tumble Stone 20-25mm.html"
+    },
+    {
+      "id": "72",
+      "name": "Mahogany Obsidian Gemstone Chip Bracelet",
+      "img": "images/Image_eproject/Product/Healing/OBSIDIAN/Crystalage/mahogany-obsidian-gemstone-chip-bracelet_3.jpg",
+      "price": "1.99",
+      "href": "product/Obsidian/Mahogany Obsidian Gemstone Chip Bracelet.html"
+    },
+    {
+      "id": "82",
+      "name": "Onyx Bracelet Adjustable Crystalge",
+      "img": "images/Image_eproject/Product/Healing/ONYX/Crystalge/patterned-carnelian-and-onyx-bracelet-adjustable.jpg",
+      "price": "3.99",
+      "href": "product/Onyx/Onyx Bracelet Adjustable Crystalge.html"
+    }
+  ]
+}

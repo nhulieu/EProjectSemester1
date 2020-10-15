@@ -1,0 +1,83 @@
+.custom-nav {
+    padding-right: 3rem !important;
+}
+@media (max-width: 1490px) {
+    .custom-nav {
+        padding-right: 2rem !important;
+    }
+}
+
+@media (max-width: 1350px) {
+    .custom-nav {
+        padding-right: 1.5rem !important;
+    }
+}
+
+@media (max-width: 1315px) {
+    .custom-nav {
+        padding-right: 0.5rem !important;
+    }
+}
+
+
+@media (max-width: 1191px) {
+    .custom-nav {
+        padding-right: 0rem !important;
+    }
+}
+.row {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000   ;
+}
+
+.product-item-link :hover {
+    color:black !important
+}
+
+.btn-buy {
+  padding: 0.5rem;
+  transition:0.5s;
+}
+.btn-buy :hover {
+    background: red;
+    color: #fff;
+}
+.add-to-card :hover {
+    background: red;
+    color: #fff;
+}
+.buy-now {
+    color: red;
+    background-color: #fff;
+    border-color: #ccc;
+    white-space: nowrap;
+    border-radius: 0;
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 0 10px;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.add-to-card {
+    color: red;
+    background-color: #fff;
+    border-color: #ccc;
+    white-space: nowrap;
+    border-radius: 0;
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 0 10px;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: 0.5s;
+}
