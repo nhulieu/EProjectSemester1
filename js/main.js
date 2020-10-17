@@ -16,6 +16,28 @@
   		animatingQuantity = false;
 		initCartEvents();
 
+		function isParentFolderPage(){
+			var currentPage = window.location.href;
+			return currentPage.includes("about.html") 
+			|| currentPage.includes("Agate.html")
+			|| currentPage.includes("Aquamarine.html")
+			|| currentPage.includes("black-tourmaline _pHU.html")
+			|| currentPage.includes("BloodStone.html")
+			|| currentPage.includes("diamond.html")
+			|| currentPage.includes("Emerald.html")
+			|| currentPage.includes("index.html")
+			|| currentPage.includes("jade.html")
+			|| currentPage.includes("Labradorite.html")
+			|| currentPage.includes("Moldavite.html")
+			|| currentPage.includes("Obsidian.html")
+			|| currentPage.includes("Onyx.html")
+			|| currentPage.includes("product-slide.html")
+			|| currentPage.includes("Rose-Quarzt.html")
+			|| currentPage.includes("specialOffer.html")
+			|| currentPage.includes("TigersEye.html")
+			|| currentPage.includes("topaz.html");
+			
+		}
 		function initCartEvents() {	
 			Util.removeClass(cart[0], 'cd-cart--empty');
 			var storageCart = JSON.parse(localStorage.getItem('shoppingcartProducts'));
@@ -132,9 +154,19 @@
 		};
 
 		function fillProductToCart(target) {			
-			productId = target["id"];			
-			document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
-			productImg = "../../"+target["url"];						
+			productId = target["id"];		
+			if(window.location.hostname.length > 0){
+				document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
+				productImg = "../../"+target["url"];
+			}
+			else{
+				if(isParentFolderPage){
+					document.getElementsByClassName("cd-cart__checkout")[0].href = "checkout.html"
+				productImg = target["url"];
+				}
+			}
+			
+									
 
 
 			productPrice = target["price"];

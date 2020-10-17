@@ -65,7 +65,7 @@
 				if($('#'+settings.linksContainer).size() == 0){
 					this.filter(":first").before('<ul id="'+settings.linksContainer+'"></ul>');
 				}
-				$('#'+settings.linksContainer).append('<li><a href="../../#" id="Choco_numsetIndex_'+settings.setIndex+'" class="Choco_link">'+settings.setTitle+'</a></li>');
+				$('#'+settings.linksContainer).append('<li><a href="#" id="Choco_numsetIndex_'+settings.setIndex+'" class="Choco_link">'+settings.setTitle+'</a></li>');
 				e = this.parent();
 				$(this).remove();
 				if($.trim(e.html()) == ""){//If parent empty : remove it
