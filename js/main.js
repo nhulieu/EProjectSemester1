@@ -154,7 +154,8 @@
 		};
 
 		function fillProductToCart(target) {			
-			productId = target["id"];		
+			productId = target["id"];
+			alert(window.location.hostname);
 			if(window.location.hostname.length > 0){
 				document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
 				productImg = "../../"+target["url"];
@@ -165,9 +166,6 @@
 				productImg = target["url"];
 				}
 			}
-			
-									
-
 
 			productPrice = target["price"];
 			productName = target["name"];	
