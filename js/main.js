@@ -156,14 +156,14 @@
 		function fillProductToCart(target) {			
 			productId = target["id"];
 			alert(window.location.hostname);
-			if(window.location.hostname.length > 0){
+			if(window.location.hostname.length > 0 && !window.location.hostname.includes("github.io")){
 				document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
 				productImg = "../../"+target["url"];
 			}
 			else{
-				if(isParentFolderPage){
+				if(isParentFolderPage()){
 					document.getElementsByClassName("cd-cart__checkout")[0].href = "checkout.html"
-				productImg = target["url"];
+					productImg = target["url"];
 				}
 			}
 
