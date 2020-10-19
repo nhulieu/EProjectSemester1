@@ -16,28 +16,6 @@
   		animatingQuantity = false;
 		initCartEvents();
 
-		function isParentFolderPage(){
-			var currentPage = window.location.href;
-			return currentPage.includes("about.html") 
-			|| currentPage.includes("Agate.html")
-			|| currentPage.includes("Aquamarine.html")
-			|| currentPage.includes("black-tourmaline _pHU.html")
-			|| currentPage.includes("BloodStone.html")
-			|| currentPage.includes("diamond.html")
-			|| currentPage.includes("Emerald.html")
-			|| currentPage.includes("index.html")
-			|| currentPage.includes("jade.html")
-			|| currentPage.includes("Labradorite.html")
-			|| currentPage.includes("Moldavite.html")
-			|| currentPage.includes("Obsidian.html")
-			|| currentPage.includes("Onyx.html")
-			|| currentPage.includes("product-slide.html")
-			|| currentPage.includes("Rose-Quarzt.html")
-			|| currentPage.includes("specialOffer.html")
-			|| currentPage.includes("TigersEye.html")
-			|| currentPage.includes("topaz.html");
-			
-		}
 		function initCartEvents() {	
 			Util.removeClass(cart[0], 'cd-cart--empty');
 			var storageCart = JSON.parse(localStorage.getItem('shoppingcartProducts'));
@@ -131,6 +109,7 @@
 			updateCartTotal(this.getAttribute('data-price'), true);
 			//show cart
 			Util.removeClass(cart[0], 'cd-cart--empty');
+			
 		};
 
 		function toggleCart(bool) { // toggle cart visibility
@@ -154,21 +133,37 @@
 		};
 
 		function fillProductToCart(target) {			
-			productId = target["id"];		
-			if(window.location.hostname.length > 0){
-				document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
-				productImg = "../../"+target["url"];
-			}
-			else{
-				if(isParentFolderPage){
-					document.getElementsByClassName("cd-cart__checkout")[0].href = "checkout.html"
-				productImg = target["url"];
+			productId = target["id"];
+			// alert(window.location.hostname);
+			// if(window.location.hostname.length > 0 && !window.location.hostname.includes("github.io")){
+			// 	document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
+			// 	productImg = "../../"+target["url"];
+			// }
+			// else{
+			// 	if(isParentFolderPage()){
+			// 		document.getElementsByClassName("cd-cart__checkout")[0].href = "checkout.html"
+			// 		productImg = target["url"].replace("../../", "");
+			// 	}else{
+			// 		document.getElementsByClassName("cd-cart__checkout")[0].href = "../../checkout.html"
+			// 		productImg = "../../"+target["url"];
+			// 	}
+			// }
+			if(window.location.href.includes("product/")){
+				if(target["url"].includes("../../")){
+					productImg = target["url"];	
+				}else{
+					productImg = "../../"+target["url"];	
 				}
+
+			}else{
+				if(target["url"].includes("../../")){
+					productImg = target["url"].replace("../../","");
+				}else{
+					productImg = target["url"];
+				}
+				document.getElementsByClassName("cd-cart__checkout")[0].href = "checkout.html"
 			}
 			
-									
-
-
 			productPrice = target["price"];
 			productName = target["name"];	
 			productQuantity = target["count"];
@@ -182,7 +177,10 @@
 			// you should insert an item with the selected product info
 			// replace productId, productName, price and url with your real product info
 			// you should also check if the product was already in the cart -> if it is, just update the quantity
-			productId = target.getAttribute('data-id');		
+			productId = target.getAttribute('data-id');	
+			if(window.location.href.includes("product/")){
+				target.setAttribute('data-src', "../../"+target.getAttribute('data-src'));
+			}
 			productImg = target.getAttribute('data-src');
 			productPrice = target.getAttribute('data-price');
 			productName = target.getAttribute('data-name');	
@@ -204,7 +202,7 @@
 					'id': productId,
 					'count': newQty
 				});
-			}	
+			}				
 		};
 
 		function removeProduct(product) {

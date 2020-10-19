@@ -76,7 +76,7 @@ li.dropdown1:hover{
 .nav > li:hover > a{
 	  color: #000;	
 	border-color:none;
-	background: url(../images/menu-arrow-hover.png) no-repeat 103% 54%;
+	/* background: url(../images/menu-arrow-hover.png) no-repeat 103% 54%; */
 }
 .nav li > ul li a:hover{
   color: #000 !important;
